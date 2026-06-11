@@ -1,0 +1,18 @@
+{
+  "name": "inm320-assign3-css-precompiler",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "goservergo": "lite-server --baseDir=\"public\"",
+    "raechellscss": "sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run raechellscss\" \"npm run goservergo\""
+  },
+  "keywords": [],
+  "author": "Raechell Teo",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.3",
+    "lite-server": "^2.6.1",
+    "sass": "^1.101.0"
+  }
+}
